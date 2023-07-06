@@ -2,6 +2,14 @@ import numpy as np
 import pandas as pd
 
 def extract_annotations(test):
+  """
+      Extracts the annotations given the json provided by elinor
+      Args:
+      - list of annotations as given by elinor
+      Returns:
+      - a dict with annotator initial as key and the given annotations as label
+      - empty dict if no annotations given
+  """
   ann_dict=dict()
   for ann in test:
     ### FOR NOW: later change to id
